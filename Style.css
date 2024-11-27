@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
+
+/* Variables para colores */
+:root {
+    --primary-color: #5c5249;
+    --secondary-color: #333d33;
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --white: #fff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Container Utility */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background: url(Imagenes_Real/ordenar_2.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.header-content .btn-1 {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.header-content .btn-1:hover {
+    background-color: var(--primary-color);
+}
+
+/* Navbar */
+.menu {
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu-icono {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--secondary-color);
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+
+}
+
+/* Burger Section */
+.burger {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--white);
+}
+
+.burger-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.burger-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.burger-1 {
+    background: var(--bg-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.burger-1:hover {
+    transform: scale(1.05);
+}
+
+.burger-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Services */
+.services {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.services-group {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.services-1 {
+    text-align: center;
+    max-width: 250px;
+}
+
+.services-1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Blog Section */
+.blog {
+    padding: 2rem 0;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.blog-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-content h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .burger-group,
+    .services-group,
+    .blog-content {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .menu-icono {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.promotions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/*ofertas y promociones*/
+.promotion-info {
+    width: 60%;
+}
+
+.promotion-info h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.promotion-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.promotion-info .btn-1 {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.promotion-info .btn-1:hover {
+    background-color: var(--secondary-color);
+}
+
+.promotion-image {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.promotion-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* datos curiosos*/
+
+.curious-fact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    background: #e1f5fe;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.curious-info {
+    width: 60%;
+}
+
+.curious-info h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.curious-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.curious-info .btn-1 {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.curious-info .btn-1:hover {
+    background-color: var(--secondary-color);
+}
+
+.curious-img {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.curious-img img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* General */
+.menu-icono {
+    display: none; /* Ocultar el icono de menú por defecto */
+    cursor: pointer; /* Asegura que el ícono sea clickeable */
+}
+
+/* En pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    /* Ocultar el menú inicialmente */
+    .navbar ul {
+        display: none;
+        flex-direction: column; /* Alinear los elementos verticalmente */
+        text-align: center; /* Centrar los enlaces */
+    }
+
+    /* Mostrar el icono de las 3 barras */
+    .menu-icono {
+        display: block;
+    }
+
+    /* Mostrar el menú cuando el checkbox esté marcado */
+    #menu:checked + label + .navbar ul {
+        display: flex; /* Mostrar los elementos del menú */
+    }
+}
+
+/* En pantallas grandes (mayores a 768px) */
+@media (min-width: 769px) {
+    .navbar ul {
+        display: flex; /* Mostrar el menú por defecto */
+        gap: 1.5rem; /* Espacio entre los enlaces */
+    }
+
+    /* Ocultar el icono de menú en pantallas grandes */
+    .menu-icono {
+        display: none;
+    }
+}

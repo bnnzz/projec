@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.header {
+    background: url(Imagenes_Real/ordenar_2.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.pedido-content {
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+select, input, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.hidden {
+    display: none;
+}
+
+.resumen, .confirmacion {
+    margin-top: 1.5rem;
+}
+
+footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+footer .link {
+    margin-bottom: 1rem;
+}
+
+footer .link a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+footer .link a:hover {
+    text-decoration: underline;
+}

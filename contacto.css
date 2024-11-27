@@ -1,0 +1,96 @@
+/* Importar la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
+
+/* Aplicar la fuente Poppins a todo el cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos generales para el pie de página */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #444; /* borde superior */
+}
+
+/* Contenido del pie de página */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Sección dentro del pie de página */
+.footer-section {
+    margin: 10px 0;
+}
+
+/* Títulos de las secciones */
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Lista sin estilo */
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Espaciado entre los elementos de la lista */
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    font-size: 1rem; /* Tamaño base para pantallas grandes */
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+/* Efecto al pasar el ratón sobre los enlaces */
+.footer-section ul li a:hover {
+    color: #ff6347; /* Color llamativo */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Estilos para los enlaces de redes sociales */
+.footer-section ul li a[aria-label="Facebook"]:hover {
+    color: #3b5998;
+}
+
+.footer-section ul li a[aria-label="TikTok"]:hover {
+    color: #69c9d0;
+}
+
+.footer-section ul li a[aria-label="Instagram"]:hover {
+    color: #e4405f;
+}
+
+.footer-section ul li a[aria-label="Pinterest"]:hover {
+    color: #bd081c;
+}
+
+/* Mejorar la disposición en pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 15px;
+    }
+
+    /* Reducir el tamaño de los títulos en pantallas pequeñas */
+    .footer-section h3 {
+        font-size: 1.3rem; /* Tamaño más pequeño para móviles */
+    }
+
+    /* Reducir el tamaño de los enlaces en pantallas pequeñas */
+    .footer-section ul li a {
+        font-size: 0.9rem; /* Un poco más pequeño para mejorar la legibilidad */
+    }
+}

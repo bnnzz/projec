@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ordenar.css">
+</head>
+<body class="dark-theme"> 
+    <header class="header">
+        <div class="header-content container">
+            <div class="logo">Ordena en línea</div>
+            <p>Elige tu comida favorita y disfruta de la mejor calidad.</p>
+        </div>
+    </header>
+
+    <!-- Pedido Section -->
+    <section class="pedido">
+        <div class="container">
+            <div class="pedido-content">
+                <h2>Pide tu comida</h2>
+                <form id="pedidoForm">
+                    <div class="form-group">
+                        <label for="hamburguesa">Selecciona tu hamburguesa:</label>
+                        <select id="hamburguesa" name="hamburguesa" required>
+                            <option value="">-- Selecciona una opción --</option>
+                            <option value="Clásica">Clásica</option>
+                            <option value="Doble Queso">Doble Queso</option>
+                            <option value="BBQ Especial">BBQ Especial</option>
+                            <option value="Hamburguesa Cesar">Hamburguesa Cesar</option>
+                            <option value="Paella de Mariscos">Paella de Mariscos</option>
+                            <option value="Rubeye a la parrilla">Ribeye a la parrilla</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bebida">Selecciona tu bebida:</label>
+                        <select id="bebida" name="bebida" required>
+                            <option value="">-- Selecciona una opción --</option>
+                            <option value="Coca-Cola">Coca-Cola</option>
+                            <option value="Agua">Agua</option>
+                            <option value="Limonada">Limonada</option>
+                        </select>
+                    </div>
+                    <button type="button" id="resumenBtn">Mostrar Resumen</button>
+                </form>
+                <div id="resumen" class="resumen hidden">
+                    <h3>Resumen de tu pedido:</h3>
+                    <p id="detalles"></p>
+                    <button id="confirmarBtn">Confirmar Pedido</button>
+                </div>
+                <div id="confirmacion" class="confirmacion hidden">
+                    <h3>¡Pedido enviado con éxito!</h3>
+                    <p>Gracias por ordenar con nosotros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="link">
+                <h3>Enlaces</h3>
+                <a href="Index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="Contacto.html">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ordenar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+.header {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: url("Imagenes_Real/Menu.jpeg") no-repeat center center/cover;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.contador {
+    background-color: #ffc371;
+    color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.promociones {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #2c2c2c;
+}
+
+.promociones h2 {
+    font-size: 2rem;
+    color: #ffc371;
+    margin-bottom: 1.5rem;
+}
+
+.promocion-desc {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #f5f5f5;
+}
+
+.promociones-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.promocion-item {
+    background: #3b3b3b;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.promocion-item:hover {
+    transform: scale(1.05);
+}
+
+.promocion-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.promocion-item h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: #ffda79;
+}
+
+.promocion-item p {
+    margin: 0 1rem 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.footer {
+    background: #1a1a1a;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.footer a {
+    color: #ffc371;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.agradecimiento-box {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.agradecimiento-icon svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+}
+
+.agradecimiento-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.agradecimiento-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #ffc371;
+    color: #333;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.agradecimiento-button:hover {
+    background-color: #ffb347;
+}
+/* Estilo general para la sección */
+.encuesta {
+    background-color: #333; /* Fondo negro */
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Agregar sombra para un toque elegante */
+    color: #fff; /* Asegura que el texto sea blanco sobre el fondo oscuro */
+}
+
+/* Contenedor que centra el formulario */
+.encuesta .container {
+    max-width: 600px;
+    margin: 0 auto; /* Centrar contenido */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Título de la encuesta */
+.encuesta h2 {
+    font-size: 2rem;
+    color: #fff; /* Título blanco */
+    margin-bottom: 1rem;
+}
+
+/* Subtítulo */
+.encuesta p {
+    font-size: 1.1rem;
+    color: #ddd; /* Subtítulo más claro */
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+    gap: 1rem; /* Espacio entre los campos */
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff; /* Fondo blanco para el formulario */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor */
+}
+
+/* Etiquetas de los campos */
+form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block; /* Hace que las etiquetas ocupen su propia línea */
+}
+
+/* Estilo para los campos de texto, select y textarea */
+form input,
+form select,
+form textarea {
+    width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+}
+
+/* Estilo para el botón de enviar */
+form button {
+    background-color: #ffc371; /* Color de fondo */
+    color: #333;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffb347; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para los botones de calificación */
+form div {
+    display: flex; /* Asegura que los botones de calificación estén en línea */
+    gap: 1rem; /* Espacio entre las opciones */
+}
+
+/* Estilo de los botones de calificación */
+form div input {
+    margin-right: 0.5rem;
+}
+
+form div label {
+    font-size: 1rem;
+    color: #333; /* Color del texto de las calificaciones */
+}
